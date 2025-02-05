@@ -127,8 +127,9 @@ tr:nth-child(even) {
     border-radius: 10px;
 }
 
-.subtitulo span{
+.subtitulo h2{
     margin: 10px;
+    font-size: 1.2em;
 }
 
 /*FIN TITULOS*/

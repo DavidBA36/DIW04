@@ -34,13 +34,22 @@ h2 {
 }
 
 
-
 input, textarea {
     width: 95%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 10px;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
 }
 
 button {

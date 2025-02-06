@@ -282,7 +282,7 @@ footer:hover {
 
 .foto img {
     width: 100%;
-    height: auto;
+    height: 240px;
 }
 
 
@@ -392,7 +392,7 @@ footer:hover {
 }
 
 .desarrollo p {
-    text-align: justify;
+    text-align: left;
     margin: 10px;
 }
 
@@ -424,6 +424,10 @@ footer:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
     border-radius: 10px;
+}
+
+.form_contacto legend{
+    padding:  10px;
 }
 
 

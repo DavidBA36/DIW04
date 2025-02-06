@@ -7,80 +7,88 @@
     <title>El Plato azul</title>
   </head>
   <body>
-    <div class="titulo">
+    <section class="titulo">
       <h1>El Plato azul</h1>
-    </div>
-    <nav aria-label="Navegación principal">
+    </section>
+    <nav class="navegador" aria-label="Navegación principal">
       <ul>
-        <li><a class="resaltado" href="carrusel_desayuno.html" target="_self">Desayuno</a></li>
-        <li><a href="carrusel_comida.html" target="_self">Comida</a></li>
-        <li><a href="carrusel_postres.html" target="_self">Postres</a></li>
+        <li>
+          <a
+            class="resaltado"
+            href="carrusel_desayuno.html"
+            target="_self"
+            accesskey="d"
+            accesskey="d"
+            >Desayuno</a
+          >
+        </li>
+        <li>
+          <a href="carrusel_comida.html" target="_self" accesskey="c">Comida</a>
+        </li>
+        <li>
+          <a href="carrusel_postres.html" target="_self" accesskey="p" accesskey="p"
+            >Postres</a
+          >
+        </li>
       </ul>
     </nav>
-    <div class="breadcrumb" aria-label="Ruta de navegación">
-      <a href="../index.html" target="_self">INICIO</a> &gt;
-      <a href="../recetas.html" target="_self">RECETAS</a> &gt;
-      <a href="carrusel_desayuno.html" target="_self">DESAYUNOS</a>
-    </div>
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="../index.html" target="_self" accesskey="i">INICIO</a> &gt;
+      <a href="../recetas.html" target="_self" accesskey="r">RECETAS</a> &gt;
+      <a href="carrusel_desayuno.html" target="_self" accesskey="d" accesskey="d"
+        >DESAYUNOS</a
+      >
+    </nav>
     <main>
-      <div class="carrusel">
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="desayuno/muffins-de-verduras-caseros.html" target="_self">
-              <img
-                src="../imagenes/muffins-de-verduras-caseros.jpg"
-                alt="Imagen muffins de verduras caseros"
-              />
-            </a>
-          </div>
-          <h2>Receta de muffins de verduras caseros</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="desayuno/tortitas-integrales-con-requeson.html" target="_self">
-              <img
-                src="../imagenes/tortitas-integrales-con-requeson.png"
-                alt="tortitas integrales con requeson"
-              />
-            </a>
-          </div>
-          <h2>Receta de integrales con requeson </h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="desayuno/tortilla-espinacas-queso.html" target="_self">
-              <img
-                src="../imagenes/tortilla-espinacas-queso.jpg"
-                alt="Imagen tortilla espinacas queso"
-              />
-            </a>
-          </div>
-          <h2>Imagen tortilla espinacas queso</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="desayuno/galletas-centeno.html" target="_self"> 
-              <img
-                src="../imagenes/galletas-centeno.JPG"
-                alt="Imagen galletas centeno"
-              />
-            </a>
-          </div>
-
-          <h2>Receta de galletas centeno</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="desayuno/pan-aguacate.html" target="_self">
-              <img
-                src="../imagenes/pan-aguacate.jpg"
-                alt="Imagen pan aguacate"
-              />
-            </a>
-          </div>
-          <h2>Receta de pan aguacate</h2>
-        </div>
-      </div>
+      <section class="carrusel">
+        <figure class="foto">
+          <a
+            href="desayuno/muffins-de-verduras-caseros.html"
+            target="_self"
+            accesskey="1"
+          >
+            <img
+              src="../imagenes/muffins-de-verduras-caseros.jpg"
+              alt="Imagen muffins de verduras caseros"
+            />
+          </a>
+          <figcaption>Receta de muffins de verduras caseros</figcaption>
+        </figure>
+        <figure class="foto">
+          <a
+            href="desayuno/tortitas-integrales-con-requeson.html"
+            target="_self"
+            accesskey="2"
+          >
+            <img
+              src="../imagenes/tortitas-integrales-con-requeson.png"
+              alt="tortitas integrales con requeson"
+            />
+          </a>
+          <figcaption>Receta de integrales con requeson</figcaption>
+        </figure>
+        <figure class="foto">
+          <a href="desayuno/tortilla-espinacas-queso.html" target="_self" accesskey="3">
+            <img
+              src="../imagenes/tortilla-espinacas-queso.jpg"
+              alt="Imagen tortilla espinacas queso"
+            />
+          </a>
+          <figcaption>Imagen tortilla espinacas queso</figcaption>
+        </figure>
+        <figure class="foto">
+          <a href="desayuno/galletas-centeno.html" target="_self" accesskey="4">
+            <img src="../imagenes/galletas-centeno.JPG" alt="Imagen galletas centeno" />
+          </a>
+          <figcaption>Receta de galletas centeno</figcaption>
+        </figure>
+        <figure class="foto">
+          <a href="desayuno/pan-aguacate.html" target="_self" accesskey="5">
+            <img src="../imagenes/pan-aguacate.jpg" alt="Imagen pan aguacate" />
+          </a>
+          <figcaption>Receta de pan aguacate</figcaption>
+        </figure>
+      </section>
     </main>
   </body>
 </html>

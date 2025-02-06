@@ -7,101 +7,95 @@
     <title>El Plato azul</title>
   </head>
   <body>
-    <div class="titulo">
+    <section class="titulo">
       <h1>El Plato azul</h1>
-    </div>
-    <nav aria-label="Navegación principal">
+    </section>
+    <nav class="navegador" aria-label="Navegación principal">
       <ul>
-        <li><a href="carrusel_desayuno.html" target="_self">Desayuno</a></li>
-        <li><a class="resaltado" href="carrusel_comida.html" target="_self">Comida</a></li>
-        <li><a href="carrusel_postres.html" target="_self">Postres</a></li>
+        <li>
+          <a href="carrusel_desayuno.html" target="_self" accesskey="d">Desayuno</a>
+        </li>
+        <li>
+          <a class="resaltado" href="carrusel_comida.html" target="_self" accesskey="c"
+            >Comida</a
+          >
+        </li>
+        <li><a href="carrusel_postres.html" target="_self" accesskey="p">Postres</a></li>
       </ul>
     </nav>
-    <div class="breadcrumb" aria-label="Ruta de navegación">
-      <a href="../index.html" target="_self">INICIO</a> &gt;
-      <a href="../recetas.html" target="_self">RECETAS</a> &gt;
-      <a href="carrusel_comida.html" target="_self">COMIDAS</a>
-    </div>
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="../index.html" target="_self" accesskey="i">INICIO</a> &gt;
+      <a href="../recetas.html" target="_self" accesskey="r">RECETAS</a> &gt;
+      <a href="carrusel_comida.html" target="_self" accesskey="c">COMIDAS</a>
+    </nav>
     <main>
-      <div class="carrusel">
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/pollo-diablo.html" target="_self">
-              <img
-                src="../imagenes/pollo-diablo.jpg"
-                alt="Imagen pollo diablo"
-              />
-            </a>
-          </div>
-          <h2>Receta de pollo diablo</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/caldeirada-de-merluza.html" target="_self">
-              <img
-                src="../imagenes/caldeirada-de-merluza.jpg"
-                alt="Imagen caldeirada de merluza"
-              />
-            </a>
-          </div>
-          <h2>Receta de caldeirada de merluza</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/ensalada-rustica-griega.html" target="_self">
-              <img
-                src="../imagenes/ensalada-rustica-griega.jpg"
-                alt="Imagen ensalada rustica griega"
-              />
-            </a>
-          </div>
-          <h2>Receta de ensalada rústica griega</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/higado-encebollado.html" target="_self">
-              <img
-                src="../imagenes/higado-encebollado.png"
-                alt="Imagen hígado encebollado"
-              />
-            </a>
-          </div>
-          <h2>Receta de hígado encebollado</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/calamares.html" target="_self">
-              <img
-                src="../imagenes/calamares.png"
-                alt="Imagen calamares en su tinta"
-              />
-            </a>
-          </div>
-          <h2>Receta de calamares en su tinta</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/boniato-pollo-salsa-coco.html" target="_self">
-              <img
-                src="../imagenes/boniato-pollo-salsa-coco.jpg"
-                alt="Imagen boniato relleno de pollo con salsa coco"
-              />
-            </a>
-          </div>
-          <h2>Receta de boniato relleno de pollo con salsa coco</h2>
-        </div>
-        <div class="tarjeta">
-          <div class="foto">
-            <a href="comida/espaguetis-de-calabacin-con-setas.html" target="_self">
-              <img
-                src="../imagenes/espaguetis-de-calabacin-con-setas.jpg"
-                alt="Imagen espaguetis de calabacin con setas"
-              />
-            </a>
-          </div>
-          <h2>Receta de espaguetis de calabacin con setas</h2>
-        </div>
-      </div>
+      <section class="carrusel">
+        <figure class="foto">
+          <a href="comida/pollo-diablo.html" target="_self" accesskey="1">
+            <img src="../imagenes/pollo-diablo.jpg" alt="Imagen pollo diablo" />
+          </a>
+          <figcaption>Receta de pollo diablo</figcaption>
+        </figure>
+        <figure class="foto">
+          <a href="comida/caldeirada-de-merluza.html" target="_self" accesskey="2">
+            <img
+              src="../imagenes/caldeirada-de-merluza.jpg"
+              alt="Imagen caldeirada de merluza"
+            />
+          </a>
+          <figcaption>Receta de caldeirada de merluza</figcaption>
+        </figure>
+
+        <figure class="foto">
+          <a href="comida/ensalada-rustica-griega.html" target="_self" accesskey="3">
+            <img
+              src="../imagenes/ensalada-rustica-griega.jpg"
+              alt="Imagen ensalada rustica griega"
+            />
+          </a>
+          <figcaption>Receta de ensalada rústica griega</figcaption>
+        </figure>
+        <figure class="foto">
+          <a href="comida/higado-encebollado.html" target="_self" accesskey="4">
+            <img
+              src="../imagenes/higado-encebollado.png"
+              alt="Imagen hígado encebollado"
+            />
+          </a>
+          <figcaption>Receta de hígado encebollado</figcaption>
+        </figure>
+
+        <figure class="foto">
+          <a href="comida/calamares.html" target="_self" accesskey="5">
+            <img src="../imagenes/calamares.png" alt="Imagen calamares en su tinta" />
+          </a>
+          <figcaption>Receta de calamares en su tinta</figcaption>
+        </figure>
+
+        <figure class="foto">
+          <a href="comida/boniato-pollo-salsa-coco.html" target="_self" accesskey="6">
+            <img
+              src="../imagenes/boniato-pollo-salsa-coco.jpg"
+              alt="Imagen boniato relleno de pollo con salsa coco"
+            />
+          </a>
+          <figcaption>Receta de boniato relleno de pollo con salsa coco</figcaption>
+        </figure>
+
+        <figure class="foto">
+          <a
+            href="comida/espaguetis-de-calabacin-con-setas.html"
+            target="_self"
+            accesskey="7"
+          >
+            <img
+              src="../imagenes/espaguetis-de-calabacin-con-setas.jpg"
+              alt="Imagen espaguetis de calabacin con setas"
+            />
+          </a>
+          <figcaption>Receta de espaguetis de calabacin con setas</figcaption>
+        </figure>
+      </section>
     </main>
   </body>
 </html>

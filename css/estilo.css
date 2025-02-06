@@ -121,14 +121,14 @@ tr:nth-child(even) {
     display:flex;   
     align-items: center;
     justify-content: center;
-    background-color: #6162c7;
+    background-color: #4244BD;
     width: 100%;
     border-radius: 10px;
     
 }
 
 .titulo h1{
-    color: #f2f2f2;
+    color: white;
     font-size: 2em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 10px;
@@ -138,10 +138,10 @@ tr:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #3484cf;
+    background-color: #176340;
     height:56px;
     font-size: 1.5em;
-    color: #f2f2f2;
+    color: white;
     font-weight: bold;
     border-radius: 10px;
 }
@@ -157,16 +157,16 @@ tr:nth-child(even) {
 
 .navegador  {
     display: flex;
-    background-color: #10599c;
+    background-color: #176340;
     border-radius: 10px;
 }
 
 .navegador a {
     display: block;
-    color: #f2f2f2;
+    color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.3em;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 

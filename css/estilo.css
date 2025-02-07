@@ -128,9 +128,9 @@ tr:nth-child(even) {
 
 .titulo h1{
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin: 10px;
+    margin: 5px;
 }
 
 
@@ -142,6 +142,7 @@ tr:nth-child(even) {
     display: flex;
     background-color: #176340;
     border-radius: 10px;
+    
 }
 
 .navegador a {
@@ -149,18 +150,25 @@ tr:nth-child(even) {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 80px;
 }
 
 .navegador a:hover, nav a:focus {
     color: red;
     font-weight: bold;
+    
+}
+
+.principal{
+    margin: 30px;
 }
 
 .navegador ul {
     display: flex;
     width: 100%;
+    margin-left: 10px;
 }
 
 .navegador li {
@@ -199,13 +207,6 @@ tr:nth-child(even) {
 
 /*INICIO Y PIE INICIO*/
 
-.principal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-}
-
 .inicio{
     display: flex;
     flex-direction: column;
@@ -224,7 +225,7 @@ footer{
     align-items: flex-start;
     font-size: 1rem;
     border-radius: 10px;
-
+    margin-top: 20px;
 }
 
 footer .footer-section{
@@ -250,6 +251,7 @@ footer .footer-section{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1920px;  
+    
 }
 
 /*Tarjetas Carrusel de imagenes*/
@@ -285,7 +287,7 @@ footer .footer-section{
 
 
 .tips_recetas{
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .info_recetas {
@@ -317,7 +319,7 @@ footer .footer-section{
 .info_recetas .centrado{
     display: flex;
     justify-items: center;
-    text-align: justify;
+    text-align: left;
 }
 
 .indice{
@@ -472,7 +474,8 @@ footer .footer-section{
 
     
 }
-/*Moviles en apaisado o muy largos*/
+
+
 @media only screen and  (orientation: portrait) and (min-width: 600px) and (max-width: 992px) {
     .indice{display: none;}
     
@@ -511,17 +514,17 @@ footer .footer-section{
 } 
 
 
-@media (orientation: landscape) and (max-width: 1200px) {
+@media (orientation: landscape) and (max-height: 500px) {
     .indice{display: none;}
     
     .navegador{
         flex-direction: column;
         align-items: flex-start;
-        width: 120px; /* Ajusta el ancho según sea necesario */
+        width: 130px; /* Ajusta el ancho según sea necesario */
         height: 100vh; /* Ocupar toda la altura */
         position: fixed; /* Fijarlo a la izquierda */
         left: 7px;
-        top: 75px;
+        top: 60px;
     }
 
     .navegador ul{
@@ -530,7 +533,7 @@ footer .footer-section{
     }
 
     .contenedor, .breadcrumb{
-        margin-left: 130px;
+        margin-left: 140px;
     }
 
    
@@ -541,7 +544,15 @@ footer .footer-section{
 
     .carrusel{
         padding: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 5px;
     }
+
+    .carrusel .foto img{
+        height:100px;
+        width:100px;
+    }
+
 
     .cabecera{
         overflow-y: auto;
@@ -569,41 +580,3 @@ footer .footer-section{
 
 } 
 
-
-/*Portatiles y escritorios*/
-/*@media only screen and (orientation: portrait) and (min-width: 992px)*/  
-    /* Navegador */
-  
-/*
-    .cabecera{
-        overflow-y: auto;
-    }
-    
-    .desarrollo{
-        overflow-y: auto;
-    }
-
-    footer{
-        flex-wrap: wrap;
-    }
-
-    .carrusel{
-        padding: 30px;
-    }
- 
-    .info_recetas  .foto img {
-        margin: 20px;
-        max-width: 300px;
-        max-height: 300px;
-    }
-
-    .inicio{
-        width: 80%;
-        padding: 20px;
-    }
-
-    .principal{
-        overflow-y: auto;
-    } 
- 
-*/

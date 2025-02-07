@@ -3,6 +3,8 @@
 html,body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 100%;
 }
 
 body {
@@ -121,9 +123,7 @@ tr:nth-child(even) {
     align-items: center;
     justify-content: center;
     background-color: #4244BD;
-    width: 100%;
     border-radius: 10px;
-
 }
 
 .titulo h1{
@@ -133,23 +133,6 @@ tr:nth-child(even) {
     margin: 10px;
 }
 
-.subtitulo{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #176340;
-    height:56px;
-    font-size: 1.5em;
-    color: white;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.subtitulo h2{
-    margin: 10px;
-    font-size: 1em;
-}
 
 /*FIN TITULOS*/
 
@@ -198,6 +181,7 @@ tr:nth-child(even) {
     padding: 10px;
     margin: 10px 0;
     border-radius: 10px;
+
 }
 .breadcrumb a {
     color: black;
@@ -219,7 +203,6 @@ tr:nth-child(even) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-y: auto;
     height: auto;
 }
 
@@ -241,7 +224,6 @@ footer{
     align-items: flex-start;
     font-size: 1rem;
     border-radius: 10px;
-    margin: 10;
 
 }
 
@@ -301,10 +283,6 @@ footer .footer-section{
 
 /*TIPS RECETAS*/
 
-.tips{
-    height: 80vh;
-    overflow-y: auto;
-}
 
 .tips_recetas{
     padding-right: 20px;
@@ -403,7 +381,6 @@ footer .footer-section{
 }
 
 
-
 .receta{
     display: flex;
     flex: 1;  
@@ -462,7 +439,7 @@ footer .footer-section{
 
     footer{
         flex-direction: column;
-        height: 120px;
+        height: 130px;
         overflow-y: auto;
     }
 
@@ -488,6 +465,12 @@ footer .footer-section{
     .form_contacto{
         width: 90%;
     }
+
+    .contenedor{
+        overflow-y: auto;
+    }
+
+    
 }
 /*Moviles en apaisado o muy largos*/
 @media only screen and  (orientation: portrait) and (min-width: 600px) and (max-width: 992px) {
@@ -527,9 +510,35 @@ footer .footer-section{
 
 } 
 
-@media (orientation: landscape) {
+
+@media (orientation: landscape) and (max-width: 1200px) {
     .indice{display: none;}
     
+    .navegador{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 120px; /* Ajusta el ancho según sea necesario */
+        height: 100vh; /* Ocupar toda la altura */
+        position: fixed; /* Fijarlo a la izquierda */
+        left: 7px;
+        top: 75px;
+    }
+
+    .navegador ul{
+        flex-direction: column;
+        height: 32px;
+    }
+
+    .contenedor, .breadcrumb{
+        margin-left: 130px;
+    }
+
+   
+
+    .contenedor{
+        overflow-y: auto;
+    }
+
     .carrusel{
         padding: 30px;
     }
@@ -542,30 +551,30 @@ footer .footer-section{
         overflow-y: auto;
     }
 
-    .footer{
-        flex-direction: column;
-        overflow-y: auto;
+    footer{
+        height: auto;
+        margin-bottom: 15px;
     }
 
-    .info_recetas  .foto img {
-        margin: 20px;
-        max-width: 280px;
+    .info_recetas .foto img {
+        max-width: 150px;
         max-height: 300px;
         height:auto;
     }
+
 
     .inicio{
         width: 97%;
     }
 
-
 } 
 
+
 /*Portatiles y escritorios*/
-@media only screen and (orientation: portrait) and (min-width: 992px)  {
+/*@media only screen and (orientation: portrait) and (min-width: 992px)*/  
     /* Navegador */
   
-
+/*
     .cabecera{
         overflow-y: auto;
     }
@@ -576,10 +585,6 @@ footer .footer-section{
 
     footer{
         flex-wrap: wrap;
-        position: fixed;
-        bottom: 0px;
-        left: 7px; 
-        right: 7px;
     }
 
     .carrusel{
@@ -597,6 +602,8 @@ footer .footer-section{
         padding: 20px;
     }
 
-   
-    
-} 
+    .principal{
+        overflow-y: auto;
+    } 
+ 
+*/

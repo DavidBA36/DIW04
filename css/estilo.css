@@ -3,7 +3,6 @@
 html,body{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
 }
 
 body {
@@ -236,11 +235,6 @@ tr:nth-child(even) {
 }
 
 footer{
-    position: fixed;
-    bottom: 0px;
-    left: 7px; 
-    right: 7px;
-    height: 130px;
     display: flex;
     background-color: rgb(187, 180, 180);
     justify-content: space-between;
@@ -265,7 +259,6 @@ footer .footer-section{
     display: flex;
     flex: 1;
     flex-direction: column;
-    padding-bottom: 130px;
     overflow-y: auto;
 }
 
@@ -438,7 +431,7 @@ footer .footer-section{
 /*Media Queries*/
 
 /*Moviles en vertical*/
-@media only screen and (max-width: 600px) {
+@media only screen and (orientation: portrait) and (max-width: 600px) {
     .indice{display: none;}
 
     .carrusel {
@@ -453,7 +446,6 @@ footer .footer-section{
     .receta{
         flex-direction: column;
         width: 100%;
-        height: 1000px;
         overflow-y: auto;
     }
 
@@ -498,8 +490,9 @@ footer .footer-section{
     }
 }
 /*Moviles en apaisado o muy largos*/
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-
+@media only screen and  (orientation: portrait) and (min-width: 600px) and (max-width: 992px) {
+    .indice{display: none;}
+    
     .carrusel{
         padding: 30px;
     }
@@ -514,12 +507,10 @@ footer .footer-section{
 
     .footer{
         flex-direction: column;
-        height: 120px;
+        height: 130px;
         overflow-y: auto;
-        
     }
 
-   
 
     .info_recetas  .foto img {
         margin: 20px;
@@ -532,10 +523,46 @@ footer .footer-section{
         width: 97%;
     }
 
+   
+
+} 
+
+@media (orientation: landscape) {
+    .indice{display: none;}
+    
+    .carrusel{
+        padding: 30px;
+    }
+
+    .cabecera{
+        overflow-y: auto;
+    }
+    
+    .desarrollo{
+        overflow-y: auto;
+    }
+
+    .footer{
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .info_recetas  .foto img {
+        margin: 20px;
+        max-width: 280px;
+        max-height: 300px;
+        height:auto;
+    }
+
+    .inicio{
+        width: 97%;
+    }
+
+
 } 
 
 /*Portatiles y escritorios*/
-@media only screen and (min-width: 992px)  {
+@media only screen and (orientation: portrait) and (min-width: 992px)  {
     /* Navegador */
   
 
@@ -549,7 +576,10 @@ footer .footer-section{
 
     footer{
         flex-wrap: wrap;
-        
+        position: fixed;
+        bottom: 0px;
+        left: 7px; 
+        right: 7px;
     }
 
     .carrusel{
@@ -566,5 +596,7 @@ footer .footer-section{
         width: 80%;
         padding: 20px;
     }
+
+   
     
 } 
